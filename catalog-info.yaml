@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: github-pages
+  description: GitHub Pages hosting and portfolio website
+  annotations:
+    github.com/project-slug: brunodeabreu-art/github-pages
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - portfolio
+    - github-pages
+    - website
+    - amigotech
+  links:
+    - url: https://brunodeabreu-art.github.io/
+      title: Live Website
+      icon: web
+    - url: https://github.com/brunodeabreu-art/github-pages
+      title: Repository
+      icon: github
+spec:
+  type: website
+  lifecycle: production
+  owner: amigotech-dev
+  system: developer-tools
+  dependsOn:
+    - resource:github-pages-hosting
